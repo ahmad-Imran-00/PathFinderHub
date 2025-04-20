@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PathFinder-HUB</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .left-content {
+        display: flex;
+        align-items: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background: linear-gradient(to right, #001f3f, #005f73);
+        border-bottom: 4px solid #ffd700;
+        font-family: "Georgia", serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0.95;
+      }
+
+      nav h1 {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        color: #ffd700;
+        font-weight: bold;
+      }
+
+      #logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 12px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ffd700;
+      }
+
+      .right-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .right-content ul {
+        list-style-type: none;
+        display: flex;
+        margin-right: 20px; /* Space between links and search bar */
+      }
+
+      .right-content li {
+        display: inline-flex;
+      }
+
+      .right-content a {
+        color: #f5f5dc;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-family: serif;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .right-content a:hover {
+        color: #ffd700;
+        font-weight: bolder;
+        text-decoration: underline;
+        text-decoration-color: #ffd700;
+        text-decoration-thickness: 3px;
+      }
+
+      #searchInput {
+        width: 300px;
+        font-size: 14px;
+        padding: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: opacity 0.3s ease;
+        border: 1px solid;
+        border-radius: 10px;
+      }
+
+      #searchInput::placeholder {
+        color: #001f3f;
+        font-style: italic;
+        font-size: 14px;
+        letter-spacing: 1px;
+        opacity: 70%;
+      }
+
+      .search-wrapper {
+        position: relative;
+      }
+      #searchButton {
+        position: relative;
+        color: #001f3f;
+        background-color: #ffd700;
+        border: none;
+        padding: 4px 4px;
+        font-family: sans-serif;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      #Clear {
+        position: relative;
+        color: #001f3f;
+        background-color: #ffd700;
+        border: none;
+        padding: 4px 4px;
+        font-family: sans-serif;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      #searchButton:hover {
+        background-color: #f5a623;
+      }
+      body {
+        background-image: url("pexels-bob-jenkin-2007649943-30194045.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-image: center;
+      }
+      /* Container to wrap both boxes */
+      .main-section {
+        display: flexbox;
+        justify-content: center;
+      }
+
+      /* Left box with heading */
+      #Welcome {
+        color: rgba(4, 68, 74);
+        padding: 30px;
+
+        width: 60%;
+
+        font-family: "Georgia", serif;
+      }
+
+      #Welcome h2 {
+        border: 2px solid #ffd700;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 45px;
+        font-weight: bolder;
+        line-height: 1.4;
+      }
+
+      /* Right box with paragraph content */
+      #content {
+        color: rgba(4, 68, 74);
+        background-color: rgba(255, 255, 255, 0.4);
+
+        padding: 30px;
+
+        width: 60%;
+
+        font-family: "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        border: 2px solid #ffd700;
+
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="left-content">
+        <h1>
+          <img
+            id="logo"
+            src="Travel-Logo-Graphics-1-37-580x386.jpg"
+            alt="Logo"
+          />
+          PathFinder-HUB
+        </h1>
+      </div>
+
+      <div class="right-content">
+        <ul>
+          <li><a href="travel_recommendation.html">Home</a></li>
+          <li><a href="AboutUS.html">About</a></li>
+
+          <li><a href="contactUS.html">Contact</a></li>
+        </ul>
+        <div id="searchwrapper">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <button id="searchButton">Search</button>
+          <button id="Clear">Clear</button>
+        </div>
+      </div>
+    </nav>
+    <div class="main-section">
+      <div id="Welcome">
+        <h2>EXPLORE THE WORLD WITH PATHFINDER-HUB</h2>
+      </div>
+      <div id="content">
+        <p>
+          Welcome to PathFinder-HUB, your ultimate travel companion! We are
+          dedicated to helping you discover the best travel destinations and
+          experiences around the globe...
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="travel_recommendation.js"></script>
+</html>
