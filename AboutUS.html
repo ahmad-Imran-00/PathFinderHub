@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - PathFinder-HUB</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("pexels-bob-jenkin-2007649943-30194045.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background: linear-gradient(to right, #001f3f, #005f73);
+        border-bottom: 4px solid #ffd700;
+        font-family: "Georgia", serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0.95;
+      }
+
+      nav h1 {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        color: #ffd700;
+        font-weight: bold;
+      }
+
+      #logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 12px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ffd700;
+      }
+
+      .right-content ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .right-content ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .right-content ul li a:hover {
+        background-color: #ffd700;
+        color: #001f3f;
+      }
+
+      .main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        color: #001f3f;
+      }
+
+      #Welcome {
+        color: rgba(4, 68, 74);
+        padding: 20px;
+        width: 70%;
+        font-family: "Georgia", serif;
+      }
+
+      #Welcome h2 {
+        border: 2px solid #ffd700;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.4;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+
+      #content {
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 25px;
+        border: 2px solid #ffd700;
+        border-radius: 10px;
+        width: 70%;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      #content ul {
+        padding-left: 20px;
+        list-style: square;
+      }
+
+      #content li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="left-content">
+        <h1>
+          <img
+            id="logo"
+            src="Travel-Logo-Graphics-1-37-580x386.jpg"
+            alt="Logo"
+          />
+          PathFinder-HUB
+        </h1>
+      </div>
+
+      <div class="right-content">
+        <ul>
+          <li><a href="travel_recommendation.html">Home</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="ContactUs.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-section">
+      <div id="Welcome">
+        <h2>ABOUT PATHFINDER-HUB</h2>
+      </div>
+      <div id="content">
+        <p>
+          <strong>PathFinder-HUB</strong> is your trusted travel companion,
+          created to inspire wanderlust and simplify your travel planning
+          experience. Whether you're exploring bustling cities or seeking hidden
+          gems, our mission is to connect travelers with unforgettable journeys.
+        </p>
+      </div>
+
+      <div id="Welcome">
+        <h2>OUR TEAM</h2>
+      </div>
+      <div id="content">
+        <ul>
+          <li><strong>Ali Raza</strong> – Founder & CEO</li>
+          <li><strong>Sara Khan</strong> – Lead Developer</li>
+          <li><strong>Usman Tariq</strong> – UI/UX Designer</li>
+          <li><strong>Ayesha Ahmed</strong> – Content Strategist</li>
+          <li><strong>Hamza Malik</strong> – Marketing Manager</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
